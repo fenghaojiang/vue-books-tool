@@ -6,7 +6,7 @@
 运行后端代码
 
 ```shell
-go run main.go
+$ go run main.go
 ```
 
 访问
