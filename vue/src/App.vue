@@ -6,12 +6,12 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Book from './components/ApiData'
 
 export default {
-  name: 'App',
+  name: 'Book',
   components: {
-    HelloWorld
+    Book
   }
 }
 </script>
