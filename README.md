@@ -5,6 +5,7 @@
 
   
 # Run
+**Backend**
 运行后端代码
 
 ```shell
@@ -15,5 +16,15 @@ $ go run main.go
 ```shell
 http://localhost:8000/douban
 ```  
+
+**Frontend**
+
+```shell
+$ cd ./vue
+```
+
+```shell
+$ npm run serve
+```
 
 
