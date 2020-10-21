@@ -52,11 +52,11 @@ export default {
   name: "ApiData",
   data() {
     return {
-      booklist: null,
+      book: null,
     }
   },
   mounted() {
-    axios.get('http://localhost:8000/douban').then(response => (this.booklist = response.data))
+    axios.get('http://localhost:8000/douban').then(response => (this.book = response.data))
   }
 }
 </script>
