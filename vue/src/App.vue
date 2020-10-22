@@ -3,10 +3,11 @@
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
+  <Book></Book>
 </template>
 
 <script>
-import Book from './components/ApiData'
+import Book from './components/Router'
 
 export default {
   name: 'Book',

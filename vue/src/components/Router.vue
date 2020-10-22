@@ -1,13 +1,15 @@
 <template>
  <el-table>
-
+   <ApiData>
+     {{}}
+   </ApiData>
  </el-table>
 </template>
 
 <script>
 import HelloWorld from "@/components/HelloWorld";
-import Router from 'vue-router'
-import Book from '@/components/ApiData'
+import Router from 'vue-router';
+import ApiData from "@/ApiData";
 
 export default new Router({
   routes: [
@@ -19,7 +21,7 @@ export default new Router({
     {
       path: '/douban',
       name: 'Book',
-      component: Book
+      component: ApiData
     },
   ]
 
