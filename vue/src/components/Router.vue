@@ -10,7 +10,7 @@ import ApiData from "@/ApiData";
 export default new Router({
   routes: [
     {
-      path: '/douban',
+      path: '/',
       name: 'Book',
       component: ApiData
     },
