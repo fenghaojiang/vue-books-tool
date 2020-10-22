@@ -1,6 +1,6 @@
 <template>
   <div class="book-body">
-    <el-table :data="booksData">
+    <el-table :data="booksData" border style="width: 100%">
       <el-table-column prop="Id" label="Id"></el-table-column>
       <el-table-column prop="title" label="书名"></el-table-column>
       <el-table-column prop="author" label="作者"></el-table-column>
@@ -16,17 +16,20 @@
 </template>
 
 <script>
-import axios from 'axios'
 export default {
   name: "ApiData",
   data() {
     return {
-      booksData: null,
+      booksData: [],
     }
   },
-  mounted() {
-    axios.get('http://localhost:8000/douban').then(response => (this.book = response.data))
-  }
+  created() {
+    fetch('http://localhost:8000/douban')
+        .then(response => response.json())
+        .then(json => {
+          this.booksData = json
+        })
+  },
 }
 </script>
 
