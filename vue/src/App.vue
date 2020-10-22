@@ -1,9 +1,9 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="book-body">
+    <Book>
+
+    </Book>
   </div>
-  <Book></Book>
 </template>
 
 <script>
