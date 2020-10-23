@@ -1,7 +1,10 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
-  <BooksList></BooksList>
+  <BooksList>
+    <v-table :width="1000" :columns="columns">
+    </v-table>
+  </BooksList>
 </template>
 
 <script>

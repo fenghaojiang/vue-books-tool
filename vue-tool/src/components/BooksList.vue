@@ -1,11 +1,6 @@
 <template>
-  <div class="books-header">
-    <v-table>
-
-    </v-table>
-  </div>
   <div class="books-body">
-
+    {{booksData}}
   </div>
 </template>
 
