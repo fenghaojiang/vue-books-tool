@@ -1,9 +1,10 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
-  <v-table>
-  </v-table>
   <BooksList data="booksData">
+    <v-table>
+      
+    </v-table>
   </BooksList>
 </template>
 
