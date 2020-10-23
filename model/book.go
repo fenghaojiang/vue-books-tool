@@ -36,6 +36,6 @@ func BookQuery(context *gin.Context, query string) {
 		}
 	}
 	context.JSON(http.StatusOK, gin.H{
-		"book_data": resultList,
+		"books_data": resultList,
 	})
 }
