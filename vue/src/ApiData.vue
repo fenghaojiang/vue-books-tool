@@ -1,5 +1,5 @@
 <template>
-  <div class="book-header">
+  <div class="book-body">
     <el-table :data="booksData" border style="width: 100%">
       <el-table-column prop="Id" label="Id"></el-table-column>
       <el-table-column prop="title" label="书名"></el-table-column>
@@ -12,6 +12,7 @@
       <el-table-column prop="comment" label="评价人数"></el-table-column>
       <el-table-column prop="quote" label="名句"></el-table-column>
     </el-table>
+  </div>
 </template>
 
 <script>
@@ -26,7 +27,7 @@ export default {
     fetch('http://localhost:8000/douban')
         .then(response => response.json())
         .then(json => {
-          this.booksData = json.book_data;
+          this.booksData = json
         })
   },
 }
