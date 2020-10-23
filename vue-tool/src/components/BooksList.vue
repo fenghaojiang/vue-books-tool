@@ -1,10 +1,25 @@
 <template>
+  <div class="books-header">
+    <v-table>
 
+    </v-table>
+  </div>
+  <div class="books-body">
+
+  </div>
 </template>
 
 <script>
+import axios from 'axios'
 export default {
-name: "BooksList.vue"
+  name: "BooksList",
+  booksData: [],
+  data() {
+    return this.booksData
+  },
+  mounted() {
+    axios.get('http://localhost:8000/douban').then(response => this.booksData = response)
+  }
 }
 </script>
 
