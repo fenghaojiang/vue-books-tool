@@ -8,9 +8,10 @@
 import axios from 'axios'
 export default {
   name: "BooksList",
-  booksData: null,
   data() {
-    return this.booksData
+    return {
+      booksData: []
+    }
   },
   mounted() {
     axios.get('http://localhost:8000/douban').then(response => this.booksData = response.data)
