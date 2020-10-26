@@ -20,7 +20,7 @@ http://localhost:8000/douban
 **Frontend**
 前端
 ```shell
-$ cd ./vue
+$ cd ./vue-tool
 ```
 
 ```shell
