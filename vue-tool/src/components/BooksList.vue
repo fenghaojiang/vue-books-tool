@@ -1,5 +1,5 @@
 <template>
-  <div class="books-body" :data="booksData">
+  <div class="books-data" :data="booksData">
     {{booksData}}
   </div>
 </template>
