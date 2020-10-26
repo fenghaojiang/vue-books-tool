@@ -21,8 +21,8 @@
       </tr>
       </thead>
       <tbody id="book-body">
-      <tr v-for="books in booksData" :key="books">
-        <td itemprop="booksId">{{books.Id}}</td>
+      <tr v-for="books in data" :key="books">
+        <td>{{books.Id}}</td>
         <td>{{books.Title}}</td>
         <td>{{books.Author}}</td>
         <td>{{books.Translator}}</td>
