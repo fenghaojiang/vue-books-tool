@@ -2,6 +2,7 @@
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Vue-Books-Tool"/>
   <BooksList>
+
   </BooksList>
 </template>
 
@@ -15,11 +16,6 @@ export default {
   components: {
     HelloWorld,
     BooksList,
-  },
-  data() {
-    return {
-      booksData:BooksList.data().booksData
-    }
   },
 }
 </script>
