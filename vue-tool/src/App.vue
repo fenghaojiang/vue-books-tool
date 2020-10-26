@@ -1,8 +1,8 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Vue-Books-Tool"/>
-  <BooksList :data="booksData">
-    <el-table :data="booksData">
+  <BooksList>
+    <el-table :data="this.booksData">
       <el-table-column prop="Id" label="Id"></el-table-column>
       <el-table-column prop="Title" label="书名"></el-table-column>
       <el-table-column prop="Author" label="作者"></el-table-column>
