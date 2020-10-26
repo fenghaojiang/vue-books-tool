@@ -1,8 +1,8 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
-  <BooksList data="booksData">
-    {{data}}
+  <BooksList :data="booksData">
+    {{booksData}}
   </BooksList>
 </template>
 
@@ -15,7 +15,7 @@ export default {
   components: {
     HelloWorld,
     BooksList,
-  }
+  },
 }
 </script>
 

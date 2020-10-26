@@ -1,5 +1,5 @@
 <template>
-  <div class="books-body">
+  <div class="books-body" :data="booksData">
     {{booksData}}
   </div>
 </template>
@@ -8,7 +8,7 @@
 import axios from 'axios'
 export default {
   name: "BooksList",
-  booksData: [],
+  booksData: null,
   data() {
     return this.booksData
   },
