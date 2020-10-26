@@ -1,6 +1,9 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Vue-Books-Tool"/>
+  <a-table :datasrc="booksData" :loading="loading">
+
+  </a-table>
   <BooksList :data="booksData">
     <table>
       <thead>
@@ -18,8 +21,8 @@
       </tr>
       </thead>
       <tbody id="book-body">
-      <tr v-for="books in data" :key="books">
-        <td>{{books.Id}}</td>
+      <tr v-for="books in booksData" :key="books">
+        <td itemprop="booksId">{{books.Id}}</td>
         <td>{{books.Title}}</td>
         <td>{{books.Author}}</td>
         <td>{{books.Translator}}</td>
@@ -37,6 +40,7 @@
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import BooksList from "@/components/BooksList";
+import 'ant-design-vue/dist/antd.css';
 
 export default {
   name: 'App',

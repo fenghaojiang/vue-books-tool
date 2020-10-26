@@ -13,7 +13,7 @@ export default {
     return this.booksData
   },
   mounted() {
-    axios.get('http://localhost:8000/douban').then(response => this.booksData = response)
+    axios.get('http://localhost:8000/douban').then(response => this.booksData = response.data)
   }
 }
 </script>
