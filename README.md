@@ -1,4 +1,6 @@
 # vue-books-tool  
+[![Build Status](https://travis-ci.com/travis-ci/travis-web.svg?branch=master)](https://travis-ci.com/travis-ci/travis-web)  
+
 在爬取豆瓣Top250书籍信息到数据库之后,在做这个前端的展示分析工具  
 
 爬取豆瓣Top250的Go语言写的爬虫项目[douban-books-crawler](https://github.com/fenghaojiang/douban-books-crawler)  
