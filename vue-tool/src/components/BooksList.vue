@@ -30,6 +30,7 @@
       </tr>
       </tbody>
     </table>
+
   </div>
 </template>
 
@@ -42,12 +43,14 @@ export default {
       booksData: []
     }
   },
+  methods: {
+    shuffle: function () {
+      let _;
+      this.booksData = _.shuffle(this.booksData)
+    }
+  },
   mounted() {
     axios.get('http://localhost:8000/douban').then(response => this.booksData = response.data)
-  }
+  },
 }
 </script>
-
-<style scoped>
-
-</style>

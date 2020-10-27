@@ -1,9 +1,7 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
+  <img alt="Vue logo" src="./assets/logo.png" width="50" height="50">
   <HelloWorld msg="Welcome to Vue-Books-Tool"/>
-  <BooksList>
-
-  </BooksList>
+  <BooksList></BooksList>
 </template>
 
 <script>
