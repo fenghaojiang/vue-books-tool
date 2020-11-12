@@ -30,8 +30,22 @@
       </tr>
       </tbody>
     </table>
-
   </div>
+
+  <el-table
+      :data="booksData"
+      style="width: 100%">
+    <el-table-column prop="Id" label="Id"></el-table-column>
+    <el-table-column prop="Title" label="Title"></el-table-column>
+    <el-table-column prop="Author" label="Author"></el-table-column>
+    <el-table-column prop="Translator" label="Translator"></el-table-column>
+    <el-table-column prop="Press" label="Press"></el-table-column>
+    <el-table-column prop="Date" label="Date"></el-table-column>
+    <el-table-column prop="Price" label="Price"></el-table-column>
+    <el-table-column prop="Star" label="Star"></el-table-column>
+    <el-table-column prop="Comment" label="Comment"></el-table-column>
+    <el-table-column prop="Quote" label="Quote"></el-table-column>
+  </el-table>
 </template>
 
 <script>
@@ -41,12 +55,6 @@ export default {
   data() {
     return {
       booksData: []
-    }
-  },
-  methods: {
-    shuffle: function () {
-      let _;
-      this.booksData = _.shuffle(this.booksData)
     }
   },
   mounted() {
