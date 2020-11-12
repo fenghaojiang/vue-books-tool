@@ -57,8 +57,21 @@ export default {
       booksData: []
     }
   },
-  mounted() {
-    axios.get('http://localhost:8000/douban').then(response => this.booksData = response.data)
+  created() {
+    this.initData()
+  },
+  methods: {
+    initData() {
+      try {
+        this.getData()
+      }catch (err) {
+        console.log('Fail in fetching data', err);
+      }
+    },
+    getData() {
+      axios.get('http://localhost:8000/douban').then(response => this.booksData = response.data)
+    },
+
   },
 }
 </script>
